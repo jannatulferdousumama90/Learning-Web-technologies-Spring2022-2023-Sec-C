@@ -26,6 +26,21 @@
 
 ?>
 
+
+<?php
+        session_start();
+        $username = $_SESSION['username'];
+        $password = $_SESSION['password'];
+        $name = $_SESSION['name'];
+		$email=   $_SESSION['email'];
+		$gender=   $_SESSION['gender'];
+        $DateofBirth =  $_SESSION['date'];
+
+    ?>
+
+
+
+
     
     <body>
       <center>
@@ -40,7 +55,8 @@
                     }                 
                 ?>
                 
-                <th> Logged in as</th>
+            
+                <th> Logged in as  <?php  echo "$username";?> </th>
                 <th> <a href = "logout.php">logout</a></th>
                 
             </tr>
@@ -61,10 +77,10 @@
                 <td colspan = "120">
                     <fieldset>
                         <legend>Profile</legend>
-                                Name                : <input type="text" name = "name"> <br><br>
-                                Email               : <input type ="email" name = "email"><br><br>
-                                Gender           : <input type="text" name = "username"><br><br>
-                                Date of Birth       : <input type="date"  name = "date"><br><br>
+                                Name                :<?php  echo "$name";?><br><br>
+                                Email               :<?php  echo "$email";?>><br><br>
+                                Gender           : <?php  echo "$gender";?><br><br>
+                                Date of Birth       : <?php  echo "$DateofBirth";?><br><br>
                                 <a href = "editprofile.php " >Edit profile</a><br>
                                 <a href = "changeprofilepic.php " >Change</a>
                     </fieldset>

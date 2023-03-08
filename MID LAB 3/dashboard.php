@@ -19,7 +19,10 @@
 
     </head>
     
-
+    <?php
+        session_start();
+        $username = $_SESSION['username'];
+    ?>
 
     <body>
       <center>
@@ -34,7 +37,7 @@
                     }                 
                 ?>
                 
-                <th> Logged in as </th>
+                <th> Logged in as  <?php  echo "$username";?> </th>
                 <th> <a href = "logout.php">logout</a></th>
                 
             </tr>
@@ -53,7 +56,7 @@
                      
                 </td>
                 <td colspan = "120">
-                Welcome
+                Welcome <?php  echo "$username";?>
 
                 </td>
             </tr>

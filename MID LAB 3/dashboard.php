@@ -19,6 +19,8 @@
 
     </head>
     
+
+
     <body>
       <center>
         
@@ -51,13 +53,14 @@
                      
                 </td>
                 <td colspan = "120">
-                    Welcome Umama!
+                Welcome
 
                 </td>
             </tr>
 
             <tr>
-                <td colspan = "180"> <center>Copyright 2017c</center></td>
+                <td colspan = "180"> <center>Copyright © 2017</center></td>
+                
             </tr>
 
 
